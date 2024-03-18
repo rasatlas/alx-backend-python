@@ -11,8 +11,8 @@ async def wait_random(max_delay: int = 10) -> float:
     0 and max_delay, including float values, seconds and eventually
     returns it.
 
-    Parameter: max_delay integer
-    Return: random number
+    Parameter: max_delay: integer
+    Return: random_val: float
     """
 
     rand_val = random.uniform(0, max_delay)
