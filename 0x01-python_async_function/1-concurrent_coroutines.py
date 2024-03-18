@@ -13,4 +13,5 @@ async def wait_n(n: int, max_delay: int) -> list:
 
     async_module = __import__('0-basic_async_syntax')
     rand_list = [await async_module.wait_random(max_delay) for i in range(n)]
-    return rand_list
+    sorted_list = sorted(rand_list)
+    return sorted_list
