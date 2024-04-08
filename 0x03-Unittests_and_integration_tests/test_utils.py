@@ -7,7 +7,7 @@ from utils import access_nested_map
 
 class TestAccessNestedMap(unittest.TestCase):
     """Test case class."""
-
+    # 0. Parameterize a unit test
     @parameterized.expand(
         [
             ({"a": 1}, ("a",), 1),
@@ -19,6 +19,7 @@ class TestAccessNestedMap(unittest.TestCase):
         """Test method for utils.access_nested_map method."""
         self.assertEqual(access_nested_map(nested_map, path), expected_result)
 
+    # 1. Parameterize a unit test
     @parameterized.expand(
         [
             ({}, ("a",), "Key 'a' not found in nested map"),
